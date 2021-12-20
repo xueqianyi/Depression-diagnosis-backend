@@ -1,0 +1,88 @@
+server:
+  port: 8080
+web:
+  upload-path: E:/YYPlatfrom/backend/YiyuPlatform/src/main/resources/static
+spring:
+  servlet:
+    multipart:
+      max-file-size: 6400MB
+      max-request-size: 1000MB
+  mvc:
+    throw-exception-if-no-handler-found: true
+    static-path-pattern: /**
+  resources:
+    cache:
+      period: 0
+  elasticsearch:
+    rest:
+      uris: http://127.0.0.1:9200
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 12345
+    # 连接超时时间
+    connect-timeout: 30000
+  datasource:
+    url: jdbc:mysql://localhost:3306/yiyudb?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    type: com.alibaba.druid.pool.DruidDataSource
+  #    filters: stat
+  #    maxActive: 20
+  #    initialSize: 1
+  #    maxWait: 60000
+  #    minIdle: 1
+  #    timeBetweenEvictionRunsMillis: 60000
+  #    minEvictableIdleTimeMillis: 300000
+  #    validationQuery: select 'x'
+  #    testWhileIdle: true
+  #    testOnBorrow: false
+  #    testOnReturn: false
+  #    poolPreparedStatements: true
+  #    maxOpenPreparedStatements: 20
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+ws:
+  port: 8888
+  title: websocketServer
+  host: 0.0.0.0
+  boss-count: 1
+  work-count: 100
+  allow-custom-requests: true
+  upgrade-timeout: 10000
+  ping-timeout: 60000
+  ping-interval: 25000
+wx:
+  appId: wxd114542303074ab3
+  appSecret: 69f783d47856a0bf57265e725fcdf0a9
+  grantType: client_credential
+  requestUrl: https://api.weixin.qq.com/sns/jscode2session
+wxToken:
+  url: https://api.weixin.qq.com/cgi-bin/token
+wxUnionId: # 废弃
+  url: https://api.weixin.qq.com/sns/userinfo
+wxSubmitPage:
+  url: https://api.weixin.qq.com/wxa/search/wxaapi_submitpages
+wxSiteSearch:
+  url: https://api.weixin.qq.com/wxa/sitesearch
+async:
+  corePoolSize: 10
+  maxPoolSize: 200
+  queueCapacity: 10
+  keepAliveSeconds: 60
+redis:
+  host: localhost
+  port: 6379
+  password: 12345
+  timeout: 1000
+  jedis:
+    pool:
+      min-idle: 5  #最小空闲
+      max-idle: 10 # 最大空闲
+      max-wait: -1
+
