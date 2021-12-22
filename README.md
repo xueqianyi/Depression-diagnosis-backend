@@ -16,7 +16,8 @@ A small program with separated front and back ends, here is the back end part, t
   ## UI
   - Personal-Center-page
   <img width="156" alt="image" src="https://user-images.githubusercontent.com/55613486/147069387-0fd7c552-9cc3-4e93-836c-5ff2adcf22df.png">
-  - Front-page
+  
+  -  Front-page
   <img width="155" alt="image" src="https://user-images.githubusercontent.com/55613486/147069563-9751a8ae-1906-4f90-bcbb-86562c0eec3a.png">
   - Article-list-page
   <img width="155" alt="image" src="https://user-images.githubusercontent.com/55613486/147069564-cb6f3a30-4a4c-4dc3-aa1f-cbbd8bf350ec.png">
