@@ -1,5 +1,6 @@
 # Depression-diagnosis-backend
-A small program with separated front and back ends, here is the back end part, the framework uses: springMVC+redis+elasticsearch+MySQL
+A WeChat Mini Program with separated front and back ends, here is the back end part, the framework uses: springMVC+redis+elasticsearch+MySQL  
+I took on 80% of the interface work.
   
   
   ## Technology-stack
