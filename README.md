@@ -1,7 +1,8 @@
 # Depression-diagnosis-backend
 A WeChat Mini Program with separated front and back ends, here is the back end part, the framework uses: springMVC+redis+elasticsearch+MySQL  
 I took on 80% of the interface work.
-  
+
+### For the complete project, see https://gitee.com/drew_zhl/YiyuDetectPlatform
   
   ## Technology-stack
 |  功能/接口   |          技术          |
